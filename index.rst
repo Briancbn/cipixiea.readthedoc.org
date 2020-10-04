@@ -10,6 +10,8 @@ Welcome to cipixiea-tutorial's documentation!
    :maxdepth: 2
    :caption: Linux Guide
 
+   linux/create-bootable-disk
+
 Indices and tables
 ==================
 
