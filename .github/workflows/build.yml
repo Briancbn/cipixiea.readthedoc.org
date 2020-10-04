@@ -1,0 +1,25 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          sudo apt -qq update
+          python3 -m pip install --upgrade setuptools
+          python3 -m pip install --upgrade sphinx \
+                                           sphinx-rtd-theme \
+
+      - name: Build documentation
+        run: |
+          make html
