@@ -6,6 +6,9 @@
 Welcome to CipixIEA's Documentation:
 =============================================
 
+This documentation is created by `Chen Bainian <https://github.com/Briancbn>`_.
+It contains useful coding notes, tutorials and guidelines.
+
 .. toctree::
    :maxdepth: 2
    :caption: Linux Guide
