@@ -1,0 +1,33 @@
+name: style
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          sudo apt -qq update
+          python3 -m pip install --upgrade setuptools
+          python3 -m pip install --upgrade sphinx \
+                                           sphinxcontrib-spelling \
+                                           doc8
+
+      - name: Doc8 Lint
+        run: |
+          doc8 .
+
+      - name: Check spelling
+        run: |
+          make spelling
+          # Stop pipeline is spellcheck error is found
+          find . -name *.spelling -exec cat {} \;
+          ! find . -name *.spelling | grep -q .
