@@ -11,6 +11,7 @@ Welcome to cipixiea-tutorial's documentation!
    :caption: Linux Guide
 
    linux/create-bootable-disk
+   linux/ubuntu
 
 Indices and tables
 ==================
