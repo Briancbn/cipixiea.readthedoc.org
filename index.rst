@@ -16,9 +16,10 @@ It contains useful coding notes, tutorials and guidelines.
    linux/create-bootable-disk
    linux/ubuntu
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :maxdepth: 2
+   :caption: Android Studio Guide
+
+   android-studio/installation
+   android-studio/configuration
