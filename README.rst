@@ -17,8 +17,10 @@ Here is a brief overview of the contents included in this document.
 
 **Linux Guide**
 
-* `Create Bootable USB Disk`_
-* `Ubuntu Basics`_
+* `Create Bootable USB Disk <https://cipixiea.readthedocs.io/en/latest/linux/create-bootable-disk.html>`_
+* `Ubuntu Basics <https://cipixiea.readthedocs.io/en/latest/linux/ubuntu.html>`_
 
-.. _Create Bootable USB Disk: https://cipixiea.readthedocs.io/en/latest/linux/create-bootable-disk.html
-.. _Ubuntu Basics: https://cipixiea.readthedocs.io/en/latest/linux/ubuntu.html
+**Android Studio Guide**
+
+* `Installation <https://cipixiea.readthedocs.io/en/latest/android-studio/installation.html>`_
+* `Configuration <https://cipixiea.readthedocs.io/en/latest/android-studio/configuration.html>`_
